@@ -1,0 +1,8 @@
+name: SmartNPCs
+version: '1.0'
+main: me.imperatrixstudios.smartNPCs.SmartNPCs
+api-version: '1.21'
+prefix: Sentinel
+authors: [ AshbornStudios ]
+description: Sentinel AC
+website: https://ashbornmc.eu/
