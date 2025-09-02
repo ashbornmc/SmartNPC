@@ -4,5 +4,9 @@ main: me.imperatrixstudios.smartNPCs.SmartNPCs
 api-version: '1.21'
 prefix: Sentinel
 authors: [ AshbornStudios ]
-description: Sentinel AC
+description: SmartNPC
 website: https://ashbornmc.eu/
+
+# This is the important part!
+depend:
+  - Citizens
