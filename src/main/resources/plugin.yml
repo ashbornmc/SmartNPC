@@ -10,3 +10,30 @@ website: https://ashbornmc.eu/
 # This is the important part!
 depend:
   - Citizens
+
+# --- ADD THIS SECTION ---
+
+# Command Registration
+commands:
+  smartnpc:
+    description: The main command for the SmartNPCs plugin.
+    aliases: [snpc]
+    usage: "/<command> <create|remove|edit|reload>"
+
+# Permission Registration
+permissions:
+  smartnpc.admin:
+    description: Grants access to all SmartNPCs commands.
+    default: op
+  smartnpc.command.create:
+    description: Allows creating NPCs.
+    default: op
+  smartnpc.command.remove:
+    description: Allows removing NPCs.
+    default: op
+  smartnpc.command.edit:
+    description: Allows editing NPCs.
+    default: op
+  smartnpc.command.reload:
+    description: Allows reloading the plugin's configuration.
+    default: op

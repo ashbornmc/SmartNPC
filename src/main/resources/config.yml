@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------------- #
+#                              SmartNPCs Configuration                               #
+# ---------------------------------------------------------------------------------- #
+
+# AI Provider Settings
+# provider: The AI service to use. Supported values: "openai", "claude", "gemini".
+# api_key: Your API key for the selected provider. THIS IS REQUIRED.
+# model: The specific model to use (e.g., "gpt-4o-mini", "claude-3-opus-20240229").
+# max_tokens: The maximum number of tokens the AI can generate in a single response.
+# temperature: Controls randomness. Lower values (e.g., 0.2) make the AI more focused and deterministic.
+#              Higher values (e.g., 0.9) make it more creative and random.
+ai:
+  provider: "openai"
+  api_key: "YOUR_API_KEY"
+  model: "gpt-4o-mini"
+  max_tokens: 200
+  temperature: 0.7
+
+# Default settings for newly created NPCs
+# These values are used when the /smartnpc create command is run.
+npc_defaults:
+  # The default personality prompt. This is sent to the AI to define its character.
+  personality: "You are a friendly and helpful villager in a Minecraft world."
+  # Whether the conversation memory system is enabled by default.
+  memory_enabled: true
+  # The maximum number of past player/NPC messages to remember for context.
+  max_memory: 10
